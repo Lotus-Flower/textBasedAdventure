@@ -13,6 +13,7 @@ class room:
         
 def roomSetup(roomIndex):
     #Takes a list of room information tuples in their desired order
+    #Returns a list of room objects with assigned information
     
     rooms = []
     choices = []
@@ -23,7 +24,8 @@ def roomSetup(roomIndex):
     return rooms
 
 def roomRouting(rooms):
-    #Takes the list of rooms, assigns left and right for each room.
+    #Takes the list of rooms, assigns left and right for each room
+    #Returns a list of room objects with left and right assinged
     #Could possibly create a pattern for routing the rooms if expansion is desired.
     
     rooms[0].left = rooms[1]
