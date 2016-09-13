@@ -177,10 +177,10 @@ def setup():
 
     #Room 7
     content1 = "Pose, so when they find your body, you'll be put in a museum"
-    response1 = "You pose so grandly, that rescue teams from all over the world come to save you. Hot stuff."
+    response1 = "You pose so grandly that rescue teams from all over the world come to save you. Hot stuff."
     content2 = "Get naked"
     response2 = "You're incinerated by the lava, nude. Is this how you make decisions in real life?"
-    content3 = "Stop, drop, and role at the highest rate possible"
+    content3 = "Stop, drop, and roll at the highest rate possible"
     response3 = "You begin rolling. You continue rolling. You're rolling too fast. You're out of control. You roll so fast that time and space contort around you. You implode."
 
     choices = [(content1, response1), (content2, response2), (content3, response3)]
@@ -235,6 +235,9 @@ def setup():
 
 def gameLoop(newGame):
 
+    #Takes a game object
+    #Loops while you traverse through rooms, displays choices, responses, determines if choice was correct and whether or not it is a game over
+    
     loopCount = 0
     abc = ["a","b","c"]
     
@@ -253,11 +256,14 @@ def gameLoop(newGame):
             while choice.lower() not in abc:            
                 choice = input("\n\nWhat do you do? (a,b, or c)\n")
 
+            print("\n" + newGame.currRoom.choices[abc.index(choice)].response + "\n")
+
             if newGame.currRoom.choices[abc.index(choice)].correct is False:
+                gameOver = input("GAME OVER. Sorry, your adventure has concluded. (Reply with any letter)\n")
                 sys.exit()
             
             
-            print("\nFollowing your success you arrive at a fork in the road (a crossroads, not a piece of silverwear). You can proceed left or right.")
+            print("\nFollowing your success you arrive at another fork in the road. You can proceed left or right.")
             
         direction = " "
         
