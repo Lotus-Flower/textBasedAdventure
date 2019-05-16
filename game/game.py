@@ -18,7 +18,7 @@ def setup():
     #Sets up the game
     #Returns a new game
     
-    name = "Nick's Tinder"
+    name = "Text Game"
     rooms = []
     startRoom = None
 
@@ -84,8 +84,8 @@ def setup():
     roomIndex.append(roomInfo)
     
     #Room 8
-    name = "at Nick's House"
-    desc = "Congratulations! You answered every question the way Nick would have!"
+    name = "at the End"
+    desc = "Congratulations! You answered every question correctly!"
 
     roomInfo = (name, desc)
     roomIndex.append(roomInfo)
@@ -109,7 +109,7 @@ def setup():
     content2 = "Hug cactus"
     response2 = "You die very quickly. What were you thinking?"
     content3 = "Drink cactus juice, it'll quench ya"
-    response3 = "Your vision gets blurry and your judgement becomes lapsed. You're no longer in any state to be on Tinder."
+    response3 = "Your vision gets blurry and your judgement becomes lapsed. You're no longer in any state to be playing this game."
 
     choices = [(content1, response1), (content2, response2), (content3, response3)]
     choiceIndex.append(choices)
@@ -119,7 +119,7 @@ def setup():
     content1 = "Overthrow the eskimo chief"
     response1 = "Attempting to overthrow the cheif gets you beat up by eskimos."
     content2 = "Pretend to be one of them"
-    response2 = "You blend in with the tribe and they accept you as their own. You live a happy life among them for many years until one day you pull out your phone and notice you have not yet finished this Tinder game. You proceed."
+    response2 = "You blend in with the tribe and they accept you as their own. You live a happy life among them for many years until one day you get on your computer and notice you have not yet finished this game. You proceed."
     content3 = "Barter"
     response3 = "Eskimos don't barter. Everyone knows that."
 

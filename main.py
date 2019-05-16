@@ -15,8 +15,7 @@ def main():
     game.gameLoop(newGame)
 
 def hello():
-    name = "Matthew"
-    print ("Hello " + name + "! I'm glad we matched. However, to know if we are really a match, will you play a game with me? The only rule is you can only respond to the prompts while you are playing the game; I cannot talk to you once you are inside. So how about it?")
+    print ("Hello, would you play a text based adventure?")
 
     while True:
         resp = input("(reply to this with 'y' or 'n') \n")
